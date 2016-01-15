@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/erintherad/digital-darkroom.git"
+    "url": "https://github.com/trsubedi/photobooth.git"
   },
   "keywords": [
     "photo",
     "filter"
   ],
-  "author": "Erin Mahoney",
+  "author": "Tika Subedi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/erintherad/digital-darkroom/issues"
+    "url": "hhttps://github.com/trsubedi/photobooth.git/issues"
   },
-  "homepage": "https://github.com/erintherad/digital-darkroom",
+  "homepage": "https://github.com/trsubedi/photobooth.git",
   "dependencies": {
     "bcrypt": "^0.8.3",
     "body-parser": "^1.13.2",

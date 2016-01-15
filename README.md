@@ -13,7 +13,7 @@ DD contains libraries such as:
 
 To run this app locally you will need to:
 
-1. Clone the repo:  https://github.com/erintherad/digital-darkroom.git
+1. Clone the repo:  https://github.com/trsubedi/photobooth.git
 
 2. npm install the module package
 
