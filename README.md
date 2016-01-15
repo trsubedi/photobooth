@@ -12,6 +12,7 @@ DD contains libraries such as:
 -Mongo/Mongoose
 
 To run this app locally you will need to:
+
 website name : https://protected-taiga-9158.herokuapp.com/
 
 1. Clone the repo:  https://github.com/trsubedi/photobooth.git
