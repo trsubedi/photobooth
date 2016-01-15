@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- Custom style sheet -->
+	<link rel="stylesheet" href="../styles/index.css"/>
+
+	<link rel="digital darkroom icon" href="../img/logo/logo-sm.png">
+
+	<title>Digital Darkroom</title>               
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- top navbar -->
+			<nav class="navbar">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<a class="navbar-brand" href="/"></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<button type="button" data-toggle="modal" data-target="#signUpModal"class="btn btn-dark navbar-btn">Sign Up</button>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="/create">Create</a></li>
+									<li><a href="/gallery">Gallery</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">About</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+			<!-- top navbar end -->	
+
+			<!-- modal sign-UP form -->
+			<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="Sign up modal">
+				<div class="modal-dialog" role="sign up">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Create your account.</h4>
+						</div>
+						<div class="modal-body">
+							<!-- Sign Up form -->
+							<div class="container text-center">
+								<div class="row">
+									<div class="col-md-6">
+										<form id="sign-up">
+											<div class="form-group">
+												<input type="text" name="user[name]" class="form-control" id="signupName" placeholder="Name" minlength="2" autofocus required>
+											</div>
+											<div class="form-group">
+												<input type="email" name="user[email]" class="form-control" id="signupEmail" placeholder="Email" required>
+											</div>
+											<div class="form-group">
+												<input type="password" name="user[password]" id="signupPassword" class="form-control" placeholder="Password" required>
+											</div>
+											<div class="form-group">
+												<input type="submit" value="Create your account" class="btn btn-primary">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Body -->
+			
+			    <div class="row text-center">
+			        <div class="col-md-12">
+			        	<div class="row landing-message">
+				           	<h2>Digital Darkroom</h2>
+							<p>Develop your images into something unique.</p>
+						<div>					
+						<div class="row">
+							<div class="col-md-12 sign-in">
+								<form method="post" action="/api/login" class="form-inline" id="log-in">
+									<div class="form-group">
+										<input type="email" name="user[email]" class="form-control" id="email" placeholder="Email" required autofocus>
+									</div>
+									<div class="form-group">
+										<input type="password" name="user[password]" class="form-control" placeholder="Password" required>
+									</div>
+									<div class="form-group">
+										<input type="submit" value="Log In" class="btn btn-dark">
+									</div>
+								</form>
+							</div>
+						</div>
+						<p id="sign-in-link">New user? <a href="" data-toggle="modal" data-target="#signUpModal">Sign up here</a></p>
+					</div>				       
+			    </div>
+			
+			<!-- Body -->
+			<!-- edit new image view -->
+<!-- 		<div class="col-sm-12">
+				<div class="row-fluid" id="filterContainer">
+					<ul id="filters">
+						<li> <a href="#" id="normal">Normal</a> </li>
+						<li> <a href="#" id="vintage">Vintage</a> </li>
+						<li> <a href="#" id="lomo">Lomo</a> </li>
+						<li> <a href="#" id="clarity">Clarity</a> </li>
+						<li> <a href="#" id="sinCity">Sin City</a> </li>
+						<li> <a href="#" id="sunrise">Sunrise</a> </li>
+						<li> <a href="#" id="crossProcess">Cross Process</a> </li>
+						<li> <a href="#" id="orangePeel">Orange Peel</a> </li>
+						<li> <a href="#" id="love">Love</a> </li>
+						<li> <a href="#" id="grungy">Grungy</a> </li>
+						<li> <a href="#" id="jarques">Jarques</a> </li>
+						<li> <a href="#" id="pinhole">Pinhole</a> </li>
+						<li> <a href="#" id="oldBoot">Old Boot</a> </li>
+						<li> <a href="#" id="glowingSun">Glowing Sun</a> </li>
+						<li> <a href="#" id="hazyDays">Hazy Days</a> </li>
+						<li> <a href="#" id="herMajesty">Her Majesty</a> </li>
+						<li> <a href="#" id="nostalgia">Nostalgia</a> </li>
+						<li> <a href="#" id="hemingway">Hemingway</a> </li>
+						<li> <a href="#" id="concentrate">Concentrate</a> </li>
+					</ul>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	<div>
+		<!-- Footer -->
+		<footer>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="text-center">Copyright &copy; Digital Darkroom 2015</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<!--jQuery-->
+	<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+	<!--Underscore-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<!-- Validation plugin -->
+	<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+	<!-- Custom script sheet -->
+	<script src="../scripts/index.js"></script>
+	<!-- Caman.js Library -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+/*----------------------------
+    VIEW STYLES
+-----------------------------*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sertig;
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family: osp-din;
+    src: url(/styles/fonts/OSP-DIN.ttf);
+}
+@font-face {
+    font-family: sertig; 
+    src: url(/styles/fonts/Sertig.otf);
+}
+.header {
+	width: 100%;
+    height: 100%;
+	background: url(../img/landing/landing.jpg) no-repeat;
+	background-size: cover;	
+    display: table;	
+}
+h1 {
+    font-family: osp-din;
+}
+h3 {
+    font-family: sertig;
+}
+h1 small {
+    font-family: sertig;
+    font-size: 0.5em;
+    text-transform: none;
+}
+
+.text-vertical-center {
+	text-transform: uppercase;
+	color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+textarea.form-control {
+  height: auto;
+  margin-top: 15px;
+}
+.edit-panel {
+    width: 400px;
+    height: 900px;
+    display: block;
+    margin-bottom: 50px;
+    width: 40%;
+    padding-top: 30px;
+}
+.slider{
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.photo-form {
+    padding-bottom: 30px;
+}
+#download {
+    margin-left: 10px;
+}
+
+
+
+/*----------------------------
+    NAVBAR STYLES
+-----------------------------*/
+.navbar-brand {
+    background: url(../img/logo/logo.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: -10px;
+}
+.navbar {
+    background: white;
+    border-color: white;
+    box-shadow: white;
+}
+.navbar-default {
+    box-shadow: none;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: transparent;
+  color: white;
+}
+.nav a, .nav a:focus, .nav a:hover {
+  background-color: transparent;
+  color: black;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent;
+    color: white;
+}  
+.navbar-collapse {
+    color: black;
+}
+  
+
+/*----------------------------
+    CREATE VIEW STYLES
+-----------------------------*/
+
+#filterContainer{
+    width: 600px;
+    margin: 50px auto 90px;
+    position: relative;
+}
+
+#filterContainer:before{
+    width: 20px;
+    box-shadow: 15px 0 10px #111;
+    position: absolute;
+    top: 0;
+    left: -22px;
+    bottom:-10px;
+    z-index:5;
+}
+#filterContainer:after{
+    width: 20px;
+    box-shadow: -15px 0 10px #111;
+    position: absolute;
+    top: 0;
+    right: -22px;
+    bottom:-10px;
+    z-index:5;
+}
+#filters{
+    padding: 0px 20px 20px 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    list-style: none;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+#filters li{
+    display:inline-block;
+    margin:0 15px 0 0;
+}
+
+#filters li a{
+    display: block;
+    width: 150px;
+    height: 130px;
+    display: inline-block;
+    position: relative;
+    background: center top no-repeat;
+    text-decoration: none !important;
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+    line-height: 294px;
+    text-align: center;
+    box-shadow: 0 0 1px rgba(255,255,255,0.4) inset;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#filters li a.active{
+    cursor:default;
+}
+
+#filters li a.active:before{
+    content: '';
+    position: absolute;
+    width: 49px;
+    height: 45px;
+    top: 43px;
+    left: 51px;
+    background: url('../img/star.jpg') no-repeat;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+
+/* The filters */
+
+#filters li #normal{        background-image:url('/img/filters/normal.png'); }
+#filters li #vintage{       background-image:url('/img/filters/vintage.png'); }
+#filters li #lomo{          background-image:url('/img/filters/lomo.png'); }
+#filters li #clarity{       background-image:url('/img/filters/clarity.png'); }
+#filters li #sinCity{       background-image:url('/img/filters/sinCity.png'); }
+#filters li #sunrise{       background-image:url('/img/filters/sunrise.png'); }
+#filters li #crossProcess{  background-image:url('/img/filters/crossProcess.png'); }
+#filters li #orangePeel{    background-image:url('/img/filters/orangePeel.png'); }
+#filters li #love{          background-image:url('/img/filters/love.png'); }
+#filters li #grungy{        background-image:url('/img/filters/grungy.png'); }
+#filters li #jarques{       background-image:url('/img/filters/jarques.png'); }
+#filters li #pinhole{       background-image:url('/img/filters/pinhole.png'); }
+#filters li #oldBoot{       background-image:url('/img/filters/oldBoot.png'); }
+#filters li #glowingSun{    background-image:url('/img/filters/glowingSun.png'); }
+#filters li #hazyDays{      background-image:url('/img/filters/hazyDays.png'); }
+#filters li #herMajesty{    background-image:url('/img/filters/herMajesty.png'); }
+#filters li #nostalgia{     background-image:url('/img/filters/nostalgia.png'); }
+#filters li #hemingway{     background-image:url('/img/filters/hemingway.png'); }
+#filters li #concentrate{   background-image:url('/img/filters/concentrate.png'); }
+
+/* Custom scrollbars for webkit */
+
+#filterContainer ::-webkit-scrollbar {
+    height: 8px;
+    background-color: rgba(100,100,100,0.2);
+    border-radius: 4px;
+}
+
+/* Handle */
+#filterContainer ::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+#filterContainer ::-webkit-scrollbar-thumb:window-inactive {
+    background: #aaa;
+}
+
+/*----------------------------
+    FOOTERS
+-----------------------------*/

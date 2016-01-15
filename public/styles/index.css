@@ -1,0 +1,110 @@
+/*----------------------------
+    VIEW STYLES
+-----------------------------*/
+
+html,
+body {
+    font-family: sertig;
+    background: url(../img/landing/landing.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    text-transform: uppercase;
+    color: black;
+}
+
+@font-face {
+    font-family: osp-din;
+    src: url(/styles/fonts/OSP-DIN.ttf);
+}
+@font-face {
+    font-family: sertig; 
+    src: url(/styles/fonts/Sertig.otf);
+}
+
+.landing-message {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 100px;
+    box-shadow:1px 0px 18px #FFFFFF;
+}
+h2 {
+    font-family: osp-din;
+    font-size: 6em;
+}
+.landing-message p {
+    font-size: 1.4em;
+}
+.sign-in {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+footer {
+    color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 5px;
+}
+
+#sign-in-link {
+    font-size: 1em;
+    margin-top: 20px;
+}
+/*----------------------------
+    BUTTON STYLES
+-----------------------------*/
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,.7);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,1);
+}
+
+/*----------------------------
+    NAVBAR STYLES
+-----------------------------*/
+.navbar-brand {
+    background: url(../img/logo/logo.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: -10px;
+}
+.navbar-inner {
+    background:transparent;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: transparent;
+  color: white;
+}
+.nav a, .nav a:focus, .nav a:hover {
+  background-color: transparent;
+  color: black;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+    
+

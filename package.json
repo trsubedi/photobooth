@@ -1,0 +1,36 @@
+{
+  "name": "darkroom",
+  "version": "1.0.0",
+  "description": "a photo filter application",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erintherad/digital-darkroom.git"
+  },
+  "keywords": [
+    "photo",
+    "filter"
+  ],
+  "author": "Erin Mahoney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erintherad/digital-darkroom/issues"
+  },
+  "homepage": "https://github.com/erintherad/digital-darkroom",
+  "dependencies": {
+    "bcrypt": "^0.8.3",
+    "body-parser": "^1.13.2",
+    "chai": "^3.2.0",
+    "connect-mongo": "^0.8.2",
+    "express": "^4.13.1",
+    "express-session": "^1.11.3",
+    "mocha": "^2.2.5",
+    "mongoose": "^4.0.8",
+    "request": "^2.60.0",
+    "underscore": "^1.8.3"
+  }
+}
